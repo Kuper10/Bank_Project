@@ -3,7 +3,7 @@
     public abstract class BaseAccount implements IAccount {
         protected int accountNumber;
         protected double balance;
-        protected double creditLimit; // Negative or zero to represent allowed overdraft
+        protected double creditLimit; 
 
         // Constructor with account number and credit limit
         public BaseAccount(int accountNumber, double creditLimit) {
@@ -25,7 +25,7 @@
             return balance;
         }
 
-        // Returns account number
+        
         @Override
         public int GetAccountNumber() {
             return accountNumber;
